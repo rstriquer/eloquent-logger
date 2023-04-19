@@ -1,0 +1,64 @@
+{
+  "name": "rstriquer/eloquent-logger",
+  "description": "Write SQL queries to a file into Laravel \"storage/logs\" directory.",
+  "keywords": ["laravel", "eloquent", "logger", "debugger", "laravel-dev"],
+  "license": "MIT",
+  "support": {
+      "issues": "https://github.com/rstriquer/eloquent-logger/issues",
+      "source": "https://github.com/rstriquer/eloquent-logger"
+  },
+  "authors": [
+      {
+          "name": "Ricardo Soares",
+          "email": "rstriquer@gmail.com"
+      }
+  ],
+  "require": {
+      "php": ">7.0",
+      "laravel/framework": ">8.0"
+  },
+  "require-dev": {
+      "laravel/pint": "^1.1.1",
+      "mockery/mockery": "^1.4.4",
+      "phpstan/phpstan": "^1.4.6",
+      "phpunit/phpunit": "^9.5.23",
+      "fakerphp/faker": "^1.9.2"
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "RStriquer\\EloquentLogger\\Tests\\Unit\\": "tests/Unit"
+      }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+      "psr-4": {
+          "RStriquer\\EloquentLogger\\": "src/"
+      }
+  },
+  "config": {
+      "preferred-install": "prod",
+      "sort-packages": true
+  },
+  "extra": {
+      "branch-alias": {
+          "dev-main": "6.x-dev"
+      },
+      "laravel": {
+          "providers": [
+              "RStriquer\\EloquentLogger\\Adapters\\Laravel\\CollisionServiceProvider"
+          ]
+      }
+  },
+  "scripts": {
+      "lint": "pint -v",
+      "test:lint": "pint --test -v",
+      "test:types": "phpstan analyse --ansi",
+      "test:unit": "phpunit --colors=always",
+      "test": [
+          "@test:lint",
+          "@test:types",
+          "@test:unit"
+      ]
+  }
+}
