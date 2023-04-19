@@ -72,10 +72,24 @@ welcome by forking the repository and sending a pull request.
 Discussions are done on
 [GitHub issue tracker](https://github.com/rstriquer/eloquent-logger/issues)
 
+Always remember to check on lint and types before post code:
+
+```bash
+composer run test:lint
+composer run test:types
+```
+
+PS: If necessary to fix lint you can just run `composer run lint` a couple of
+times till it passes green and it will fix itself automatically.
+
 ## How to unit-test
 
 This package make use of in memory sqlite to test its feature therefore be sure
 to have php-sqlite (or similar) installed on your system before running tests.
+
+```bash
+composer run test:unit
+```
 
 ## Code of Conduct
 
