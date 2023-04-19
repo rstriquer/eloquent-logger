@@ -31,7 +31,7 @@ with any Laravel version after 8.
 
 If you have the opportunity to successfully use this plugin in a previous
 laravel release please consider opening an
-(issue)[https://github.com/rstriquer/eloquent-logger/issues]
+[issue](https://github.com/rstriquer/eloquent-logger/issues)
 to report your experience.
 
 If you have any problems with this plugin please report it by following the
@@ -66,11 +66,11 @@ tail -n 10 storage/logs/query.log > storage/logs/query.tmp && \
 ## Contributing
 
 The code is located in the Git repository at
-(github)[https://github.com/rstriquer/eloquent-logger]. Contributions are most
+[github](https://github.com/rstriquer/eloquent-logger). Contributions are most
 welcome by forking the repository and sending a pull request.
 
 Discussions are done on
-(GitHub issue tracker)[https://github.com/rstriquer/eloquent-logger/issues]
+[GitHub issue tracker](https://github.com/rstriquer/eloquent-logger/issues)
 
 ## How to unit-test
 
