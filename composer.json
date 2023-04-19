@@ -46,7 +46,7 @@
       },
       "laravel": {
           "providers": [
-              "RStriquer\\EloquentLogger\\Adapters\\Laravel\\CollisionServiceProvider"
+              "RStriquer\\EloquentLogger\\Adapters\\Laravel\\DatabaseServiceProvider"
           ]
       }
   },
