@@ -82,6 +82,10 @@ composer run test:types
 PS: If necessary to fix lint you can just run `composer run lint` a couple of
 times till it passes green and it will fix itself automatically.
 
+To test a specific change you may configure your composer.json file in your
+project like [described
+here](https://gist.github.com/rstriquer/541cf089ce51d3bcb9125af50ff68160)
+
 ## How to unit-test
 
 This package make use of in memory sqlite to test its feature therefore be sure
