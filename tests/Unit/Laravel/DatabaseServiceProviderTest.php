@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use RStriquer\EloquentLogger\Adapters\Laravel\DatabaseServiceProvider;
+use RStriquer\EloquentLogger\DatabaseServiceProvider;
 use RStriquer\EloquentLogger\Tests\Unit\Laravel\Models\User;
 
 class AuthServiceProviderTest extends TestCase
