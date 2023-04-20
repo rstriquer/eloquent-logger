@@ -43,6 +43,34 @@ steps on "Contributing" below.
 compose require rstriquer/eloquent-logger --dev
 ```
 
+**IMPORTANT**
+I couldn't get the Provider to be loaded automatically, without changing files
+in the project, so I open a thread on
+[StackOverflow](https://stackoverflow.com/questions/76058428/eloquent-provider-inside-composer-package-in-vendor-not-auto-loading-on-a-dev-en)
+. Please feel free to help if you have any tips on how get this to work! But
+while I can't make it load automatically just by installing the package itself,
+it is necessary to make some manual changes, both in the `config/app.php`
+file and in the `composer.json` file of your project.
+
+In composer file add
+`"RStriquer\\EloquentLogger\\": "vendor/rstriquer/eloquent-logger/src/",`
+right before the `"Tests\\": "tests/"` line at the `"psr-4"` inside
+`"autoload-dev"`. It should end up something like this:
+
+```json
+    "autoload-dev": {
+        "psr-4": {
+            "RStriquer\\EloquentLogger\\": "vendor/rstriquer/eloquent-logger/src/",
+            "Tests\\": "tests/"
+        }
+    },
+```
+
+And in `config/app.php` you should add
+`\RStriquer\EloquentLogger\DatabaseServiceProvider::class` inside the
+`'providers'` array item. This way it will load automatically whenever the
+application starts running.
+
 If you want you can personalize the log filename by setting the environment
 variable `DB_LOGGER_FILE` but the file must be placed at storage directory.
 
