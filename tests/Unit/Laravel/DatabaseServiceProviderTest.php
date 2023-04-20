@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-// namespace Tests\Unit\Laravel;
-
 namespace Rstriquer\EloquentLogger\Tests\Unit\Laravel;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
