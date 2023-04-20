@@ -30,8 +30,7 @@
   "autoload": {
       "classmap": [
         "src/",
-        "config/",
-        "app/"
+        "config/"
       ],
       "psr-4": {
         "RStriquer\\EloquentLogger\\": "src/"
@@ -40,8 +39,7 @@
   "autoload-dev": {
       "classmap": [
         "src/",
-        "config/",
-        "app/"
+        "config/"
       ],
       "psr-4": {
         "RStriquer\\EloquentLogger\\": "src/",
