@@ -1,6 +1,6 @@
 <?php
 
-namespace RStriquer\EloquentLogger\Tests\Unit\Laravel;
+namespace Rstriquer\EloquentLogger\Tests\Unit\Laravel;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Debug\ExceptionHandler;

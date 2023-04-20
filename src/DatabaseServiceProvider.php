@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RStriquer\EloquentLogger;
+namespace Rstriquer\EloquentLogger;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;

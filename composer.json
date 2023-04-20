@@ -32,7 +32,7 @@
         "src/"
       ],
       "psr-4": {
-        "RStriquer\\EloquentLogger\\": "src/"
+        "Rstriquer\\EloquentLogger\\": "src/"
       }
   },
   "autoload-dev": {
@@ -40,8 +40,8 @@
         "src/"
       ],
       "psr-4": {
-        "RStriquer\\EloquentLogger\\": "src/",
-        "RStriquer\\EloquentLogger\\Tests\\Unit\\": "tests/Unit"
+        "Rstriquer\\EloquentLogger\\": "src/",
+        "Rstriquer\\EloquentLogger\\Tests\\Unit\\": "tests/Unit"
       }
   },
   "minimum-stability": "dev",
@@ -53,7 +53,7 @@
   "extra": {
       "laravel": {
           "providers": [
-              "RStriquer\\EloquentLogger\\DatabaseServiceProvider"
+              "Rstriquer\\EloquentLogger\\DatabaseServiceProvider"
           ]
       }
   },
