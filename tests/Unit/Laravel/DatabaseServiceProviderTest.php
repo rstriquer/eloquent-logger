@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Rstriquer\EloquentLogger\Tests\Unit\Laravel;
+namespace RStriquer\EloquentLogger\Tests\Unit\Laravel;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use Rstriquer\EloquentLogger\DatabaseServiceProvider;
-use Rstriquer\EloquentLogger\Tests\Unit\Laravel\Models\User;
+use RStriquer\EloquentLogger\DatabaseServiceProvider;
+use RStriquer\EloquentLogger\Tests\Unit\Laravel\Models\User;
 
 class AuthServiceProviderTest extends TestCase
 {

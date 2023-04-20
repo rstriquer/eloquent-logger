@@ -1,6 +1,6 @@
 <?php
 
-use Rstriquer\EloquentLogger\DatabaseServiceProvider;
+use RStriquer\EloquentLogger\DatabaseServiceProvider;
 
 return [
     'providers' => [

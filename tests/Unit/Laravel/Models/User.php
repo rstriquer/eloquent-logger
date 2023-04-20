@@ -1,6 +1,6 @@
 <?php
 
-namespace Rstriquer\EloquentLogger\Tests\Unit\Laravel\Models;
+namespace RStriquer\EloquentLogger\Tests\Unit\Laravel\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
