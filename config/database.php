@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'rstriquer/eloquent-logger' => [
+    'logger' => [
         /**
          * Turns off logging while the value is false.
          */
