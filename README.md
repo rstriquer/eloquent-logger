@@ -40,7 +40,7 @@ steps on "Contributing" below.
 ## How to install
 
 ```bash
-compose require rstriquer/eloquent-logger --dev
+composer require rstriquer/eloquent-logger --dev
 ```
 
 If you want you can personalize the log filename by setting the environment
