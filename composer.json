@@ -50,7 +50,7 @@
   "extra": {
       "laravel": {
           "providers": [
-              "RStriquer\\EloquentLogger\\Adapters\\Laravel\\DatabaseServiceProvider"
+              "RStriquer\\EloquentLogger\\DatabaseServiceProvider"
           ]
       }
   },
