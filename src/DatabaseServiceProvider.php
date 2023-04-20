@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RStriquer\EloquentLogger\Adapters\Laravel;
+namespace RStriquer\EloquentLogger;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -20,8 +20,10 @@ class DatabaseServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (config('database.rstriquer/eloquent-logger.active')) {
-            DB::listen(function ($query) {
+        $config = require __DIR__ . '/../config/database.php';
+
+        if ($config['logger']['active']) {
+            DB::listen(function ($query) use ($config) {
                 $buf = str_replace(
                     ['?'], ['%s'], str_replace('%', '%%', $query->sql)
                 );
@@ -29,7 +31,7 @@ class DatabaseServiceProvider extends ServiceProvider
                     $buf = implode('', $buf);
                 }
                 File::append(
-                    storage_path(config('database.rstriquer/eloquent-logger.file')),
+                    storage_path($config['logger']['file']),
                     '['.date('Y-m-d H:i:s').' query time:'.$query->time
                         .']'.PHP_EOL.vsprintf($buf, $query->bindings)
                         .PHP_EOL.PHP_EOL

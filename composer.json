@@ -1,16 +1,19 @@
 {
   "name": "rstriquer/eloquent-logger",
   "description": "Write SQL queries to a file into Laravel \"storage/logs\" directory.",
-  "keywords": ["laravel", "eloquent", "logger", "debugger", "laravel-dev"],
+  "keywords": ["laravel", "eloquent", "logger", "debugger", "laravel-dev", "dev"],
+  "homepage": "https://github.com/rstriquer/eloquent-logger",
+  "readme": "https://github.com/rstriquer/eloquent-logger/README.md",
   "license": "MIT",
   "support": {
       "issues": "https://github.com/rstriquer/eloquent-logger/issues",
-      "source": "https://github.com/rstriquer/eloquent-logger"
+      "source": "https://github.com/rstriquer/eloquent-logger",
+      "docs": "https://github.com/rstriquer/eloquent-logger/README.md"
   },
   "authors": [
       {
           "name": "Ricardo Soares",
-          "email": "rstriquer@gmail.com"
+          "homepage": "https://gist.io/@rstriquer/4e8012db1a55bebdc99672d2d178bbaa/"
       }
   ],
   "require": {
@@ -24,29 +27,35 @@
       "phpunit/phpunit": "^9.5.23",
       "fakerphp/faker": "^1.9.2"
   },
-  "autoload-dev": {
+  "autoload": {
+      "classmap": [
+        "src/",
+        "config/"
+      ],
       "psr-4": {
-          "RStriquer\\EloquentLogger\\Tests\\Unit\\": "tests/Unit"
+        "RStriquer\\EloquentLogger\\": "src/"
+      }
+  },
+  "autoload-dev": {
+      "classmap": [
+        "src/",
+        "config/"
+      ],
+      "psr-4": {
+        "RStriquer\\EloquentLogger\\": "src/",
+        "RStriquer\\EloquentLogger\\Tests\\Unit\\": "tests/Unit"
       }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "autoload": {
-      "psr-4": {
-          "RStriquer\\EloquentLogger\\": "src/"
-      }
-  },
   "config": {
       "preferred-install": "prod",
       "sort-packages": true
   },
   "extra": {
-      "branch-alias": {
-          "dev-main": "6.x-dev"
-      },
       "laravel": {
           "providers": [
-              "RStriquer\\EloquentLogger\\Adapters\\Laravel\\DatabaseServiceProvider"
+              "RStriquer\\EloquentLogger\\DatabaseServiceProvider"
           ]
       }
   },
