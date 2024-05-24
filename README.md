@@ -12,7 +12,8 @@ some pages on the internet, thus facilitating his day-to-day bases;
 
 **IMPORTANT**:
 
--   This module is not recommended for production use;
+-   This module is not recommended for production use. It was built only for
+    DEVELOPMENT environment;
 -   Considering the package writes all queries, it is recommended to keep it
     turned off, even in a development environment, and turn it on only when
     performing query improvement work;
