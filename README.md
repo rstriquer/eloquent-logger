@@ -89,7 +89,7 @@ here](https://gist.github.com/rstriquer/541cf089ce51d3bcb9125af50ff68160)
 ## How to unit-test
 
 This package make use of in memory sqlite to test its feature therefore be sure
-to have php-sqlite (or similar) installed on your system before running tests.
+to have ext-sqlite installed on your system before running tests.
 
 ```bash
 composer run test:unit
