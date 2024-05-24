@@ -1,7 +1,7 @@
 {
   "name": "rstriquer/eloquent-logger",
   "description": "Write SQL queries to a file into Laravel \"storage/logs\" directory.",
-  "keywords": ["laravel", "eloquent", "logger", "debugger", "laravel-dev", "dev"],
+  "keywords": ["laravel", "eloquent", "logger", "debugger", "laravel-dev", "dev", "devops", "mysql", "postgresql", "query", "sql"],
   "homepage": "https://github.com/rstriquer/eloquent-logger",
   "readme": "https://github.com/rstriquer/eloquent-logger/README.md",
   "license": "MIT",
