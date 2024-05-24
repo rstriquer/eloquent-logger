@@ -104,7 +104,7 @@ the Laravel community is welcoming to all, please review and abide by the
 ## Authors and License
 
 This is an open source project by
-[@rstriquer](https://gist.io/@rstriquer/4e8012db1a55bebdc99672d2d178bbaa/)
+[@rstriquer](https://rstriquer.github.io/portfolio/)
 and licensed under
 [MIT](https://github.com/rstriquer/eloquent-logger/blob/main/LICENSE)
 license.
