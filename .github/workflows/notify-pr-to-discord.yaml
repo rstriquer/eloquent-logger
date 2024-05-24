@@ -6,10 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Discord Notification
-      if: github.event.pull_request.merged == true
-      uses: appleboy/discord-action@master
-      with:
-        INPUT_WEBHOOK_ID: ${{ secrets.WEBHOOK_ID }}
-        INPUT_WEBHOOK_TOKEN: ${{ secrets.WEBHOOK_TOKEN }}
-        message: 'A pull request has been merged.'
+      - uses: actions/checkout@master
+      - name: Discord Notification
+        if: github.event.pull_request.merged == true
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          args: '**${{ github.actor }}** pushed [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }}) to **${{ github.ref_name }}**'
