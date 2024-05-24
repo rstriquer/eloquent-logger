@@ -42,6 +42,8 @@ steps on "Contributing" below.
 
 ## How to install
 
+Just run the following:
+
 ```bash
 composer require rstriquer/eloquent-logger --dev
 ```
