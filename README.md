@@ -16,7 +16,8 @@ some pages on the internet, thus facilitating his day-to-day bases;
     DEVELOPMENT environment;
 -   Considering the package writes all queries, it is recommended to keep it
     turned off, even in a development environment, and turn it on only when
-    performing query improvement work;
+    performing query improvement work since it may consume a considerable
+    amount of size on HDD when running uninterruptedly;
 -   In very extreme and specific cases, where you are writing very (very) large
     contents (such as longtext fields or similar) it is possible that there are
     situations in which the plugin results in recording failures, depending on
