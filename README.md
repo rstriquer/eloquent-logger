@@ -21,7 +21,8 @@ some pages on the internet, thus facilitating his day-to-day bases;
 -   In very extreme and specific cases, where you are writing very (very) large
     contents (such as longtext fields or similar) it is possible that there are
     situations in which the plugin results in recording failures, depending on
-    the limitations of your operating system;
+    the limitations of your operating system (in old windows versions depending
+    on FAT32 it may limit the size of the output file to less then 4gb);
 -   By and large at the end the log file is not that big but there is no
     logrotate functionality set therefore I recommend you monitor the log file
     size and delete it whenever necessary;
