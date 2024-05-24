@@ -49,7 +49,8 @@ composer require rstriquer/eloquent-logger --dev
 ```
 
 If you want you can personalize the log filename by setting the environment
-variable `DB_LOGGER_FILE` but the file must be placed at storage directory.
+variable `DB_LOGGER_FILE`. It works with `.end` file and the file must be
+placed at storage directory.
 
 ## how to use the plugin
 
