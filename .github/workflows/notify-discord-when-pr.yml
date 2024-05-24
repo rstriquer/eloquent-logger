@@ -12,4 +12,4 @@ jobs:
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-        text: 'A pull request has been merged.'
+        message: 'A pull request has been merged.'
